@@ -14,3 +14,13 @@
         }
     }
 </script>
+
+<style lang="scss">
+	body {
+		margin: 0;
+	}
+
+	#app {
+        background-color: #f7f7f7;
+	}
+</style>
