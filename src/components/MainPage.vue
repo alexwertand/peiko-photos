@@ -82,14 +82,13 @@
 						name: stock,
 						change: change >=0 ? `+${change}`: `${change}`,
 						current: current.toFixed(2),
-						stock
 					});
-
-					this.getOrderedStocksData();
 				});
+
+				this.getOrderedStocksData();
 			},
 			getOrderedStocksData() {
-				return this.stocks.sort((a, b) => a.stock.localeCompare(b.stock, 'en'));
+				return this.stocks.sort((a, b) => a.name.localeCompare(b.name, 'en'));
 			}
 		},
 	}
