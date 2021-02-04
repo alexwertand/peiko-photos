@@ -234,15 +234,21 @@
 	}
 
 	.table-cell {
+		@include border-simple-bottom;
 		width: 33.33333%;
 		padding: 10px 15px;
+	}
+
+	.table-row:last-child {
+		.table-cell {
+			@include border-none;
+		}
 	}
 
 	.table-head {
 		.table-cell {
 			@include f-bold;
 			@include background-color-secondary;
-			@include border-simple-bottom;
 		}
 	}
 
